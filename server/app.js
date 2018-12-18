@@ -8,7 +8,10 @@ const app = express();
 
 // Connect to mLab database
 mongoose.connect(
-  `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@ds039037.mlab.com:39037/gql-booksapp`
+  `mongodb://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@ds039037.mlab.com:39037/gql-booksapp`,
+  {
+    useNewUrlParser: true
+  }
 );
 mongoose.connection.once('open', () => {
   console.log('Connected to database');
