@@ -7,6 +7,7 @@ Created to learn about GraphQL.
 ## Usage
 
 -Create mLab/MongoDB instance
+
 In the server folder, create a `.env` file and store mLab user username in `DB_USERNAME` variable and password in `DB_PASSWORD` to connect to database
 
 -Install Dependencies
@@ -30,4 +31,5 @@ $ npm run start
 ```
 
 -Visit GraphQL IDE
+
 Go to http://localhost:4000/graphql
